@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -175,7 +174,6 @@
                         if (!/^[1-9]?$/.test(value)) {
                             e.target.value = '';
                         }
-                        input.classList.add('incorrect');
                     });
 
                     boardContainer.appendChild(input);
@@ -198,7 +196,7 @@
                     if (!val) {
                         isComplete = false;
                     } else if (val !== solutionBoard[row][col]) {
-                        input.input.classList.1 = input.classList.add('incorrect'); = input.classList.add('incorrect');
+                        input.classList.add('incorrect');
                         allCorrect = false;
                     } else {
                         input.classList.remove('incorrect');
